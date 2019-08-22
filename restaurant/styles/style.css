@@ -8249,7 +8249,7 @@ h1 {
   opacity: 0.9;
   font-size: 3.4666666667rem;
 }
-@media (min-width: 992px) {
+@media only screen and (min-width : 993px) {
   h1 {
     font-size: 5.3333333333rem;
   }
@@ -8862,7 +8862,7 @@ nav ul a:hover {
 .slides li .caption {
   top: 20% !important;
 }
-@media (min-width: 600px) {
+@media only screen and (min-width : 601px) {
   .slides li .caption {
     top: 25% !important;
   }
@@ -8923,7 +8923,7 @@ nav ul a:hover {
 #about > div[class*=pattern] {
   background-image: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
 }
-@media (min-width: 992px) {
+@media only screen and (min-width : 993px) {
   #ingridient .row {
     padding-right: 2em;
   }
@@ -8994,7 +8994,7 @@ nav ul a:hover {
   }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width : 993px) {
   #reviews .container {
     width: 50%;
   }
@@ -9007,7 +9007,7 @@ nav ul a:hover {
   position: relative;
   padding-left: 0;
 }
-@media (min-width: 600px) {
+@media only screen and (min-width : 601px) {
   #reviews blockquote {
     font-size: 1.6666666667rem;
   }
@@ -9022,7 +9022,7 @@ nav ul a:hover {
   top: 10px;
   right: 100%;
 }
-@media (min-width: 600px) {
+@media only screen and (min-width : 601px) {
   #reviews blockquote:before {
     font-size: 6.4rem;
   }
@@ -9046,7 +9046,7 @@ nav ul a:hover {
   justify-content: center;
   margin-bottom: 2.1333333333rem;
 }
-@media (min-width: 992px) {
+@media only screen and (min-width : 993px) {
   #reservation #rsv-img {
     margin-bottom: 0;
   }
@@ -9096,7 +9096,7 @@ footer#footer {
 footer#footer .row .col:not(:last-child) {
   margin-bottom: 2.1333333333rem;
 }
-@media (min-width: 992px) {
+@media only screen and (min-width : 993px) {
   footer#footer .row .col:not(:last-child) {
     margin-bottom: 0;
   }
