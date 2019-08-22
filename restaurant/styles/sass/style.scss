@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+// Color
+@import "materalize/color-variables";
+@import "materalize/color-classes";
+
+// Variables;
+@import "materalize/variables";
+
+// Reset
+@import "materalize/normalize";
+
+// materalize
+@import "materalize/global";
+@import "materalize/badges";
+@import "materalize/icons-material-design";
+@import "materalize/grid";
+@import "materalize/navbar";
+@import "materalize/typography";
+@import "materalize/transitions";
+@import "materalize/cards";
+@import "materalize/toast";
+@import "materalize/tabs";
+@import "materalize/tooltip";
+@import "materalize/buttons";
+@import "materalize/dropdown";
+@import "materalize/waves";
+@import "materalize/modal";
+@import "materalize/collapsible";
+@import "materalize/chips";
+@import "materalize/materialbox";
+@import "materalize/forms/forms";
+@import "materalize/table_of_contents";
+@import "materalize/sidenav";
+@import "materalize/preloader";
+@import "materalize/slider";
+@import "materalize/carousel";
+@import "materalize/tapTarget";
+@import "materalize/pulse";
+@import "materalize/datepicker";
+@import "materalize/timepicker";
+
+/*!
+ * custom sass
+ * Copyright 2011-2019 aditya Authors
+ */
+
+@import "custom/functions";
+@import "custom/breakpoint";
+@import "custom/mixins";
+@import "custom/colors";
+@import "custom/utillities";
+@import "custom/fonts";
+@import "custom/content/general";
+@import "custom/content/header";
+@import "custom/content/about";
+@import "custom/content/ingridient";
+@import "custom/content/menu";
+@import "custom/content/reviews";
+@import "custom/content/reservation";
+@import "custom/content/footer";

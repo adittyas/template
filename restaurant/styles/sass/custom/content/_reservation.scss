@@ -1,0 +1,73 @@
+#reservation {
+    @include bg-shadow("../images/pattern2.png");
+
+    h4 {
+        color: $yellow;
+    }
+
+    #rsv-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: unit(32);
+
+        @media #{$large-and-up} {
+            margin-bottom: 0;
+        }
+
+        img {
+            padding: 0 unit(8);
+            max-width: unit(270);
+        }
+    }
+
+    .row {
+        .col {
+            .row {
+                margin: 0 !important;
+            }
+        }
+    }
+
+    form {
+        margin-top: unit(36);
+
+        .row {
+            margin: 0 unit(-8);
+        }
+
+        .input-field {
+            padding: {
+                right: unit(8);
+                left: unit(8);
+            }
+
+            input {
+                @extend %transition;
+                border: 1px solid #c8c6c6 !important;
+                padding: 0 unit(15) !important;
+
+                @include focus {
+                    border: 1px solid #c89f2d !important;
+                    outline: 1px solid #c89f2d !important;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.input-field.col label {
+    left: unit(8);
+}
+
+.input-field {
+    >label {
+        top: -10px;
+    }
+
+    .select-wrapper {
+        +label {
+            top: -40px !important;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.menu-book {
+    p {
+        font-weight: 100;
+        margin: 0;
+    }
+
+    h4 {
+        @extend %yellow;
+    }
+
+    h6 {
+        @extend %yellow2;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: $yellow2;
+        padding-bottom: unit(8);
+    }
+
+    .menu-list {
+        padding: unit(8);
+        position: relative;
+        margin: unit(30) 0;
+
+        &.special {
+            border: thin solid $yellow2;
+
+            &:before {
+                content: "Special";
+                position: absolute;
+                bottom: 100%;
+                left: 100%;
+                transform: translateX(-100%);
+                font-family: inherit;
+                background-color: $yellow2;
+                color: $white2;
+                padding: 0 unit(15);
+            }
+        }
+    }
+
+}
+
+#menu {
+    @include bg-shadow("../images/pattern2.png");
+
+    .row {
+        .col {
+            @include flexible-mp(padding, horizontal, 24, 72);
+        }
+    }
+}

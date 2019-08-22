@@ -1,0 +1,50 @@
+%navbar-white {
+  background-color: $bg-white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  @extend %navbar-white;
+
+  @include media-breakpoint-up(md) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .navbar {
+    @include flexible-mp(padding, vertical, 15, 29.4335);
+
+    @include media-breakpoint-up(xl) {
+      padding: {
+        right: 0;
+        left: 0;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $txt-dark;
+          text-align: center;
+
+          padding: {
+            right: unit(15);
+            left: unit(15);
+          }
+
+          &.active {
+            color: $bg-lightblue !important;
+          }
+
+          @include hover {
+            color: $bg-lightblue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-white {
+  @extend %navbar-white;
+}

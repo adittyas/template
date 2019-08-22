@@ -1,0 +1,42 @@
+#reviews {
+    .container {
+        @media #{$large-and-up} {
+            width: 50%;
+        }
+    }
+
+    blockquote {
+        border: none;
+
+        @media #{$medium-and-up} {
+            font-size: unit(25);
+        }
+
+        font-weight: 700;
+        font-family: 'Gentium Basic',
+        serif;
+        color: #dde0df;
+        position: relative;
+        padding-left: 0;
+
+        &:before {
+            position: absolute;
+            content: "\201c";
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            margin: 0;
+            font-size: unit(48);
+
+            @media #{$medium-and-up} {
+                font-size: unit(96);
+            }
+
+            top: 10px;
+            right: 100%;
+        }
+
+        cite {
+            font-weight: 300;
+        }
+    }
+}

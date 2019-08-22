@@ -1,0 +1,20 @@
+#contact-form {
+    width: 80%;
+
+    @include media-breakpoint-up(md) {
+        width: 60%;
+    }
+
+    margin: 0 auto;
+
+    .form-group {
+        padding: {
+            left: unit(8);
+            right: unit(8);
+        }
+    }
+
+    .form-control {
+        border-radius: 0 !important;
+    }
+}

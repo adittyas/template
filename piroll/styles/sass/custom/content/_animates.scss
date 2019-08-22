@@ -1,0 +1,22 @@
+.myanime {
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    $delay: 0.15s;
+
+    @for $i from 1 through 8 {
+        &.d#{$i} {
+            animation-delay: 0.25s + $delay;
+        }
+
+        $delay: $delay+0.15s;
+    }
+}
+
+// @keyframes fadeup{
+
+// }
+// .fadeUp{
+//     animation: 
+// }

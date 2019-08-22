@@ -1,0 +1,46 @@
+// primary color
+
+$white : #ffffff;
+$white2 : #fefefe;
+$dark : #191919;
+$dark2 : #4c4c4c;
+$yellow:#cc9900;
+$yellow2:#c89f2d;
+
+
+// the class
+%yellow {
+    color: $yellow;
+}
+
+%yellow2 {
+    color: $yellow2;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.txt-white {
+    color: $white2;
+}
+
+.bg-white2 {
+    background-color: $white2;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.txt-dark {
+    color: $dark2;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-yellow2 {
+    background-color: $yellow2;
+}

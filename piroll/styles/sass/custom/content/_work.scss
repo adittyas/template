@@ -1,0 +1,114 @@
+.our-project {
+    list-style: none;
+    // margin: 0;
+    padding: 0;
+    color: $bg-white;
+    overflow: hidden;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+        margin: 0;
+        text-align: left;
+    }
+
+    >li:first-child {
+        display: inline-block;
+        font-size: 48px;
+
+        @include media-breakpoint-up(lg) {
+            float: left;
+            margin-right: 8px;
+        }
+    }
+
+    >li:nth-child(2) {
+        font-size: 20px;
+    }
+
+    >li:last-child {
+        line-height: unit(34);
+    }
+
+}
+
+.our-service {
+    list-style: none;
+    margin: 0;
+    padding: 0 unit(15);
+    color: $txt-dark;
+    text-align: center;
+
+    >li:first-child {
+        font-size: 48px;
+    }
+
+    >li:nth-child(2) {
+        font-size: unit(16);
+    }
+
+    >li:last-child {
+        color: $txt-muted;
+        font-family: "nunitosans-regular" !important;
+        font-weight: lighter;
+    }
+
+}
+
+
+.img-box {
+
+    .row {
+
+        >.col,
+        >[class*="col-"] {
+            height: 300px;
+            transition: .5s;
+        }
+
+        @mixin oddeven($x) {
+
+            >.col:nth-child(#{$x}),
+            >[class*="col-"]:nth-child(#{$x}) {
+                @content;
+
+                @include hover {
+                    background-color: $txt-dark;
+                }
+            }
+
+        }
+
+        &.odd {
+            @include oddeven(odd) {
+                background-color: $img-box1;
+            }
+
+            @include oddeven(even) {
+                background-color: $img-box2;
+            }
+
+        }
+
+        &.even {
+            @include oddeven(even) {
+                background-color: $img-box1;
+            }
+
+            @include oddeven(odd) {
+                background-color: $img-box2;
+            }
+        }
+    }
+
+}
+
+#patner {
+
+    div:not(:last-child) {
+        margin-bottom: unit(16);
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 0;
+        }
+    }
+}

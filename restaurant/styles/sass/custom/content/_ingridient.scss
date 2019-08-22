@@ -1,0 +1,13 @@
+#ingridient {
+
+    .row {
+
+        @media #{$large-and-up} {
+            padding-right: 2em;
+        }
+
+        img {
+            margin: 0 unit(8);
+        }
+    }
+}

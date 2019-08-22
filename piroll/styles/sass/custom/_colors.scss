@@ -1,0 +1,53 @@
+// background-color
+
+$bg-white : #ffffff;
+$bg-white2 : #f8f9f9;
+$bg-white3 : #f5f5f5;
+
+$bg-gray: #e9e9e9;
+
+$bg-lightblue: #10c9c3;
+
+// image-box
+$img-box1: #838383;
+$img-box2: #dddddd;
+$img-box-hover: #252525;
+
+// text color
+$txt-dark: #141414;
+$txt-muted: #787878;
+
+
+// the class
+
+.bg-white {
+    background-color: $bg-white;
+}
+
+.bg-white2 {
+    background-color: $bg-white2;
+}
+
+.bg-white3 {
+    background-color: $bg-white3;
+}
+
+.bg-gray {
+    background-color: $bg-gray;
+}
+
+.txt-muted {
+    color: $txt-muted;
+}
+
+.txt-white {
+    color: $bg-white2 !important;
+}
+
+.bg-lightblue {
+    background-color: $bg-lightblue;
+}
+
+.bg-dark {
+    background-color: $txt-dark !important;
+}

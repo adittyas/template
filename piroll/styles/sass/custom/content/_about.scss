@@ -1,0 +1,37 @@
+.progress {
+    height: unit(3);
+
+    &:not(:last-child) {
+        margin-bottom: unit(36);
+    }
+
+    &-bar {
+        background-color: $bg-lightblue;
+    }
+
+}
+
+#about {
+    .row {
+        >div:first-child {
+            @include flexible-mp(padding, vertical, 36, 148.3245);
+        }
+
+        >div:last-child {
+            overflow: hidden;
+
+            img {
+                max-height: 570px;
+                width: 100%;
+                opacity: .6;
+                object-fit: cover;
+                object-position: center;
+
+                @include hover {
+                    transform: scale(1.02);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

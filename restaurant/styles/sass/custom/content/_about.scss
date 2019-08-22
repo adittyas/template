@@ -1,0 +1,8 @@
+#about {
+    @include bg-shadow("../images/pattern.png");
+
+    h4 {
+        @extend %yellow;
+    }
+
+}

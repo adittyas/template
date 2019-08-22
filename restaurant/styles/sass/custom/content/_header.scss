@@ -1,0 +1,115 @@
+nav,
+nav .nav-wrapper i,
+nav a.sidenav-trigger,
+nav a.sidenav-trigger i {
+    height: unit(110);
+    line-height: unit(110);
+
+    &.material-icons {
+        line-height: unit(110);
+    }
+}
+
+nav {
+    background-color: transparent;
+    box-shadow: inset 0px 11px 18px -7px rgba(0, 0, 0, 0.75);
+
+    ul {
+        a {
+            text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+
+            @include hover {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}
+
+.nav-scroll {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-fixed {
+    height: 0 !important;
+    box-shadow: inset 0px 11px 18px -7px rgba(0, 0, 0, 0.75);
+}
+
+.sidenav {
+    background: #fff url("../images/pattern.png");
+    box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+}
+
+.slides {
+    li {
+        img {
+            filter: brightness(-100%);
+        }
+
+        .caption {
+            @media #{$medium-and-up} {
+                top: 25% !important;
+            }
+
+            top: 20% !important;
+
+            h1 {
+                text-shadow: 2px 0 rgba(0, 0, 0, .8);
+            }
+
+            button {
+                font-size: inherit;
+                font-family: "lato-regular-webfont";
+                border: none;
+                color: $white;
+                padding: unit(8) unit(16);
+                margin: 0 unit(8);
+                margin-bottom: unit(8);
+                opacity: 0.6;
+                border-radius: 3px;
+
+                &.book {
+                    background-color: rgba(0, 0, 0, 0.3) !important;
+                    border: 1px solid $dark;
+                }
+
+                &.menu {
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border: 1px solid $white;
+                }
+
+                @include hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@keyframes vibrate {
+    from {
+        transform: scale(2);
+    }
+
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.socmed {
+    a {
+        position: relative;
+        color: #dab33e;
+        border-radius: 0 !important;
+        display: inline;
+        padding: 0 unit(8);
+
+        @include hover {
+            background-color: transparent !important;
+            animation-name: vibrate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+            transform: scale(2);
+        }
+    }
+}
