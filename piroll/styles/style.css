@@ -14488,7 +14488,7 @@ header .navbar .navbar-nav .nav-item .nav-link:hover {
 #home {
   max-height: 100%;
   height: 670px;
-  background: #e9e9e9 url("https://source.unsplash.com/1600x900/?snow,cloud,white") no-repeat center center fixed;
+  background: #e9e9e9 url("https://source.unsplash.com/1600x900/?white") no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
